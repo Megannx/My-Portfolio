@@ -1,0 +1,432 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f4f8; 
+    transition: background-color 0.5s, color 0.5s;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode .skills li, 
+.light-mode .projects li {
+    background-color: #f5f5f5; /* Slightly darker white for light mode */
+    border: 1px solid #ddd; /* Light grey border */
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #1565c0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #1565c0; /* Darken the background color on hover for a professional look */
+}
+
+.dark-mode #intro-section,
+.dark-mode header,
+.dark-mode #about,
+.dark-mode #skills,
+.dark-mode #projects,
+.dark-mode #contact,
+.dark-mode footer {
+    background-color: #1565c0;
+    color: #fff;
+}
+
+.dark-mode .skills li {
+    background-color: #1e88e5; /* Set the box background color to black */
+    color: #fff; /* Ensure the text color remains white */
+    border: 1px solid #333; /* Optional: add a border for better visibility */
+}
+
+.dark-mode a {
+    color: #ffffff; /* Adjust link color in dark mode */
+}
+
+/* Additional styling for specific sections if needed */
+.dark-mode #intro-section h1 {
+    color: #ffffff; /* Adjust text color for intro section in dark mode */
+}
+
+.dark-mode header h1 {
+    color: #ffffff; /* Adjust text color for header in dark mode */
+}
+
+.dark-mode h2 {
+    color: #ffffff; /* Adjust text color for section headings in dark mode */
+}
+
+.dark-mode p {
+    color: #fff; /* Adjust text color for paragraphs in dark mode */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+    color: #fff; /* Change header color to white in dark mode */
+}
+
+#dark-mode-toggle {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#dark-mode-toggle:active {
+    transform: scale(0.95);
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #1565c0; /* Darken the background color on hover for a professional look */
+}
+
+#intro-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('122.jpg'); 
+    background-position: center;
+    background-size: 70%; 
+    background-color: white; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    opacity: 1;
+    transition: opacity 1s ease; 
+    pointer-events: none; 
+    image-rendering: -webkit-optimize-contrast; /* Chrome */
+    image-rendering: crisp-edges; /* General */
+    filter: none; /* Remove any blur filter */
+}
+
+#intro-section.fade-out {
+    opacity: 0;
+}
+
+#intro-section.hidden {
+    display: none; 
+}
+
+header {
+    background-color: #1e88e5; /* Background color */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.4; 
+}
+
+#name {
+    font-size: 2.5em; 
+    color: #ffffff; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 0.5em; 
+}
+
+#title {
+    font-size: 1.2em; 
+    color: #f0f4f8;
+    font-weight: 300; 
+}
+
+header:hover {
+    background-color: #1565c0; 
+}
+header:hover #name {
+    color: #1e88e5; 
+}
+
+header:hover #title {
+    display: block;
+    color: #1e88e5; 
+}
+
+header:hover {
+    background-color: #1565c0;
+}
+
+section {
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 800px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   
+}
+h1, h2, h3 {
+    color: #1e88e5; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Space between skill and project blocks */
+}
+
+.skills div, .projects .project-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills ul, .projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .projects li {
+    margin: 0.5em 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.75em 1.5em;
+    background: linear-gradient(135deg, #1e88e5, #0288d1);
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: background 10s ease, transform 10s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+
+.project-link:hover {
+    background: linear-gradient(135deg, #0288d1, #1e88e5); /* Reversed gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.project-link:active {
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 0.5em;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    border-radius: 4px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5); /* Blue glow */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #e64a19; 
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: #d32f2f; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+footer {
+    background-color: #1e88e5; 
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    bottom: 0;
+    z-index: 1; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.skills li, .projects li {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    padding: 1em; 
+    margin: 0.5em 0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.skills li:hover, .projects li:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+:focus {
+    outline: 2px dashed #1e88e5;
+    outline-offset: 4px;
+}
+
+section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.project-link:hover {
+    background: linear-gradient(135deg, #0288d1, #1e88e5); 
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item, .project-item2 {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    padding: 1em; 
+    margin: 0.5em 0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover, .project-item2:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* General form container styling */
+#contact {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels styling */
+.contact-form label {
+    margin-top: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields and textarea styling */
+.contact-form input, 
+.contact-form textarea {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px; 
+    margin-top: 0.5em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1em; /* Improve readability */
+}
+
+/* Focus state for input fields and textarea */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.5); /* More pronounced blue glow */
+    outline: none;
+}
+
+/* Submit button styling */
+.contact-form button {
+    background-color: #1e88e5; 
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 8px; /* More rounded corners */
+    font-size: 1em; /* Match input field font size */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover state for submit button */
+.contact-form button:hover {
+    background-color: #1565c0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+/* Active state for submit button */
+.contact-form button:active {
+    background-color: #0d47a1; /* Darker blue on click */
+    transform: scale(0.98); /* Slight scale down effect */
+}
+
+.dark-mode .projects li {
+    background-color: #0d365a; /* Darker blue color */
+    color: #fff; /* Ensure text color remains white */
+    border: 1px solid #333; /* Optional: Add a border for better visibility */
+}
+
+/* Additional rule to adjust the background color of project items in dark mode */
+.dark-mode .project-item,
+.dark-mode .project-item2 {
+    background-color: #1e88e5; /* Light blue color for dark mode */
+    color: #fff; /* Ensure text color remains white */
+    border: 1px solid #333; /* Optional: Add a border for better visibility */
+}
