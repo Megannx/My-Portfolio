@@ -5,7 +5,10 @@ Welcome to my portfolio! I'm Megan White, a passionate full-stack developer with
 I am passionate about creating innovative solutions and am seeking opportunities to collaborate on challenging projects that push the boundaries of technology. Explore my portfolio to see my work in action, or contact me to discuss potential collaborations.
 
 ## Screen Recording of Portfolio
-"C:\Users\mnwhi\Downloads\Screen Recording 2024-08-31 123459.mov"
+
+https://github.com/user-attachments/assets/a09d0bd6-9089-4def-8392-b94a05d242c7
+
+
 
 ## Link to Application
 https://megannx.github.io/My-Portfolio/
