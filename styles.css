@@ -243,6 +243,38 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.view-more-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 2em; /* Space above the button */
+}
+
+.view-more-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background: linear-gradient(135deg, #1e88e5, #1e88e5);
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.view-more-button:hover {
+    background: linear-gradient(135deg, #0288d1, #1e88e5);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.view-more-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
